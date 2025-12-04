@@ -1,8 +1,111 @@
 <!DOCTYPE html>
-<html>
-  <head><title>MindJong</title></head>
-  <body>
-    <h1>MindJong Official Page</h1>
-  </body>
-</html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindJong - Official App Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(135deg, #673ab7, #512da8);
+      padding: 40px 20px;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .download-buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .download-buttons a img {
+      height: 60px;
+      margin: 10px;
+      transition: 0.3s;
+    }
+    .download-buttons a img:hover {
+      transform: scale(1.06);
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 50px;
+    }
+    .feature-box {
+      background: #fff;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+    .feature-box h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: #512da8;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+    /* Multi-language simple JS switch */
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="title">MindJong</h1>
+    <p id="subtitle">Akıl, strateji ve rahatlamanın buluştuğu eşsiz bir puzzle deneyimi.</p>
+  </header>
 
+  <div class="container">
+    <div class="download-buttons">
+      <a href="https://play.google.com/store/apps/details?id=com.etemtolu.mindjong" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
+      </a>
+      <a href="https://apps.apple.com/us/app/mindjong/id6755523446" target="_blank">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" />
+      </a>
+    </div>
+
+    <div class="features">
+      <div class="feature-box">
+        <h3 id="f1-title">Zengin Tema Seçenekleri</h3>
+        <p id="f1-text">Farklı temalarda Mahjong deneyimi yaşayın.</p>
+      </div>
+      <div class="feature-box">
+        <h3 id="f2-title">Akıcı & Rahatlatıcı Oynanış</h3>
+        <p id="f2-text">Sade, hızlı ve sürükleyici bir oyun yapısı.</p>
+      </div>
+      <div class="feature-box">
+        <h3 id="f3-title">Düzenli Güncellemeler</h3>
+        <p id="f3-text">Yeni temalar, iyileştirmeler ve ödüller sürekli ekleniyor.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 MindJong — Tüm hakları saklıdır.
+  </footer>
+
+</body>
+</html>
